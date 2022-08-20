@@ -1,0 +1,6 @@
+colour=input("please enter a colour ")
+plural_noun=input("please enter plural_noun ")
+adjective=input("please enter an adjective ")
+print("trees are "+colour)
+print(plural_noun+" are mean ")
+print("please keep it "+adjective)
