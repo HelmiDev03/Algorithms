@@ -1,5 +1,6 @@
 # Bellman Ford Algorithm in Python
 # work iwth any type of graphe (circular/non circular / negative edge/positive edge ............)
+# this algorithm will result an infinite loop if we have an absorberance( when we have cycle with negeative sum)
 
 class Graph:
 
