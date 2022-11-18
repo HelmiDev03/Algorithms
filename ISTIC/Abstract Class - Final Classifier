@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+class shape{
+ string color;
+ public:
+ shape(string c){
+     color =c;
+ }
+ virtual int  get_area() =0;
+ virtual void display() final {
+     cout <<"Class Created By Helmi "<<endl;}
+};
+class triangle:public shape{
+    float height,width;
+    public:
+    triangle(string c , float h , float w):shape(c){
+        height=h;
+        width=w;
+    }
+   int get_area(){
+        return height*width;
+    }
+};
+ int main(){
+    triangle x("blue",5,4);
+    shape* ptr =&x;
+    cout<<ptr->get_area()<<endl;
+    ptr->display();
+     return 0;
+ }
