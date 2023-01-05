@@ -6,16 +6,13 @@ def commun_words(*files):
         for j in i: # j is a string included in each single line of each file with the \n
             for k in j.split():
                 new.append(k)
-    return new
-   
-        
+    return new     
 file1=open("a.txt","r")
 file2=open("b.txt",mode="r")
 file3=open("c.txt",mode="r")
 print("Commun Words Are : ")
-new=commun_words(file1,file2,file3)
-check=[""]*len(new)
-for i in new:
+check=[""]*len(commun_words(file1,file2,file3))
+for i in commun_words(file1,file2,file3):
         if new.count(i)>1 and i not in check :
             check.append(i)
             print(i)
