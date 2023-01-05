@@ -1,0 +1,17 @@
+def replace_multiple_spaces_with_single_space(file):
+    l=file.read()
+    i=0
+    s=""
+    while i<len(l):
+        if l[i]!=" ":
+            s+=l[i]
+            i+=1 
+        else:
+            while i<len(l) and l[i]==" ":
+                i+=1
+            s+=" "    
+    file=open("a.txt","w")
+    file.write(s)
+    
+file=open("a.txt","r")
+replace_multiple_spaces_with_single_space(file)
