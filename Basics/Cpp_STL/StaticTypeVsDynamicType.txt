@@ -1,0 +1,27 @@
+Static Data Types and Structures
+int, float, double, char, etc. (Primitive Data Types):
+
+Static: These are basic data types with fixed size (e.g., int is typically 4 bytes). Once declared, the memory allocated for these types does not change.
+Array:
+
+Static: An array is a collection of elements of the same type (e.g., int arr[10];). The size of the array is fixed at compile time and cannot be changed during runtime.
+Dynamic Data Types and Structures
+std::vector:
+
+Dynamic: A vector is a dynamic array that can change its size during runtime. It can grow or shrink as elements are added or removed.
+std::string:
+
+Dynamic: A string in C++ (using std::string) is a dynamic array of characters. It can change its size as you add or remove characters.
+std::queue:
+
+Dynamic: A queue is a dynamic data structure that operates in a FIFO (First In, First Out) manner. It can grow as elements are enqueued and shrink as elements are dequeued.
+std::deque:
+
+Dynamic: A double-ended queue (deque) allows insertion and deletion from both ends. It is a dynamic structure that resizes automatically as needed.
+std::list:
+
+Dynamic: A doubly linked list that allows efficient insertion and deletion of elements at any position. It dynamically allocates memory as elements are added or removed.
+Summary
+Static: int, float, char, double, and arrays (int arr[10];).
+Dynamic: std::vector, std::string, std::queue, std::deque, std::list.
+Static types/structures have fixed memory sizes determined at compile time, while dynamic ones can change size and allocate/deallocate memory at runtime.

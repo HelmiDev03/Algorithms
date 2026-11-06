@@ -1,0 +1,14 @@
+Case #1: 2
+b
+bb
+aaa
+Case #2: 4
+d
+cc
+acb
+aabb
+Case #3: 10
+j
+ih
+bgf
+cdea

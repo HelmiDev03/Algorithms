@@ -1,0 +1,1 @@
+g++ A.cpp -o a && a.exe
